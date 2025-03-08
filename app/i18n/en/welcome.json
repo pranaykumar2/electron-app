@@ -1,0 +1,12 @@
+{
+  "enterConferenceNameOrUrl": "Enter conference name or Vignan Meet URL",
+  "go": "Join",
+  "welcomeHeading": "Welcome to Vignan Meet",
+  "welcomeSubheading": "An Intranet Based Video Conferencing Application",
+  "recentMeetings": "Recent Meetings",
+  "instantMeeting": "Start a Meeting Now",
+  "startMeetingHelp": "Create a new meeting and invite others",
+  "startMeeting": "Start Meeting",
+  "or": "or",
+  "joinMeeting": "Join Meeting"
+}
