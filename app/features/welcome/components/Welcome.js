@@ -273,7 +273,6 @@ class Welcome extends Component<Props, State> {
 
                 <div className = 'recent-meetings-container'>
                     <SectionTitle style = {{ color: '#FFFFFF' }}>Recent Meetings</SectionTitle>
-
                     <RecentList />
                 </div>
             </Body>

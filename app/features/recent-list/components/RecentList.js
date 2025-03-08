@@ -12,6 +12,7 @@ import { conferenceRemoved } from '../actions';
 import {
     ConferenceCard,
     ConferenceTitle,
+    EmptyListMessage,
     Label,
     RecentListContainer,
     RecentListWrapper,
@@ -51,21 +52,37 @@ class RecentList extends Component<Props, *> {
     render() {
         const { t } = this.props;
 
+        return (
+            <RecentListWrapper>
+                {this._renderContent()}
+            </RecentListWrapper>
+        );
+    }
+
+    /**
+     * Renders the content based on whether there are recent meetings or not.
+     *
+     * @returns {ReactElement}
+     */
+    _renderContent() {
+        const { t } = this.props;
+
         if (this.props._recentList.length === 0) {
-            return null;
+            return (
+                <EmptyListMessage>
+                    {t('noRecentMeetings', 'Currently, there are no meetings that have been recently joined.')}
+                </EmptyListMessage>
+            );
         }
 
         return (
-            <RecentListWrapper>
-                <Label>{ t('recentListLabel') }</Label>
-                <RecentListContainer>
-                    {
-                        this.props._recentList.map(
-                            conference => this._renderRecentListEntry(conference)
-                        )
-                    }
-                </RecentListContainer>
-            </RecentListWrapper>
+            <RecentListContainer>
+                {
+                    this.props._recentList.map(
+                        conference => this._renderRecentListEntry(conference)
+                    )
+                }
+            </RecentListContainer>
         );
     }
 
