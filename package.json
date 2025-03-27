@@ -18,7 +18,7 @@
     "node": ">=14.0.0"
   },
   "build": {
-    "appId": "org.jitsi.jitsi-meet",
+    "appId": "edu.vignan-meet",
     "productName": "Vignan Meet",
     "generateUpdatesFilesForAllChannels": true,
     "afterSign": "./notarize.js",
@@ -64,18 +64,7 @@
       "category": "VideoConference;AudioVideo;Audio;Video;Network",
       "description": "Vignan Meet Desktop App",
       "desktop": {
-        "Comment[de]": "Vignan Meet Desktop App",
-        "Comment[es]": "Aplicación de escritorio Vignan Meet",
-        "Comment[fr]": "Application de bureau Vignan Meet",
-        "Comment[hi]": "विज्ञान मीट डेस्कटॉप एैप",
-        "Comment[hr]": "Vignan Meet desktop aplikacija",
-        "Comment[hu]": "Asztali Vignan Meet-alkalmazás",
-        "Comment[it]": "Applicazione Vignan Meet Desktop",
-        "Comment[pt]": "Aplicativo Vignan Meet",
-        "Comment[ru]": "Приложение Vignan Meet",
-        "Comment[sq]": "Aplikacion Vignan Meet për Desktop",
-        "Comment[zh-CN]": "Vignan Meet 桌面应用",
-        "Comment[zh-TW]": "Vignan Meet 桌面應用程式"
+        "Comment[de]": "Vignan Meet Desktop App"
       },
       "executableName": "Vignan-meet",
       "target": [
